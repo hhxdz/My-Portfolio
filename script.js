@@ -47,7 +47,10 @@ openMenuBtn.addEventListener('click', () => {
 
         // PROJECTS
 
-import {token, userName} from "./api_key.js";
+// import {token, userName} from "./api_key.js";
+
+export const token = "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"
+export const userName = "hhxdz"
 
 let allRepos = [];
 let displayedCount = 0;
