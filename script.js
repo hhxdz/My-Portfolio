@@ -47,7 +47,7 @@ openMenuBtn.addEventListener('click', () => {
 
         // PROJECTS
 
-// import {token, userName} from "./api_key.js";
+import {token, userName} from "./api_key.js";
 
 let allRepos = [];
 let displayedCount = 0;
