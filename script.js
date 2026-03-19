@@ -250,12 +250,7 @@ getRepos();
 async function fetchReadme(owner, repo){
     const URL = `https://api.github.com/repos/${owner}/${repo}/readme`;
     try{
-        const response = await fetch(URL, {
-            headers: {
-                Authorization: `Bearer ${token}`
-            }
-        });
-
+        const response = await fetch(URL)
         if(!response.ok) return null;
 
         const data = await response.json();
