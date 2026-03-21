@@ -88,7 +88,7 @@ const translation = {
         footerText: `I experimented, coded, and brought ideas to life. Each project taught me something new and exciting. I keep growing, improving, and building things I’m proud of.`,
         smallFooterText: `I experimented, and each project taught me something new. I keep growing, improving, and making an impact.`,
         xsFooterText: `Every project inspires me to grow. I continue learning and making an impact.`,
-
+        skhShort: `Skhidnytsia, Lviv Region`
 
 
 
@@ -182,7 +182,7 @@ const translation = {
         footerText: `Я експериментувала та втілювала ідеї в життя. Кожен проєкт навчив мене чогось нового. Я продовжую вдосконалюватися та створювати те, чим пишаюся.`,
         smallFooterText: `Я експериментувала, і кожен проєкт навчив мене чогось нового. Я завжди продовжую рости та вдосконалюватися`,
         xsFooterText: `Кожен проєкт надихає мене. Я завжди продовжую вчитися та творити`,
-
+        skhShort: `Східниця, Львів. обл.`
 
 
     }
@@ -294,9 +294,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function updateElements(){
     if(window.innerWidth < 360 && currentLang === 'ua'){
-        linksTop.style.gap = "17px";
-        linksBot.style.gap = "17px";
-        footerLinks.style.gap = "17px";
+        linksTop.style.gap = "13px";
+        linksBot.style.gap = "13px";
+        footerLinks.style.gap = "13px";
     }else if(window.innerWidth >= 360 && window.innerWidth < 460 && currentLang === 'ua'){
         linksTop.style.gap = "";
         linksBot.style.gap = "";

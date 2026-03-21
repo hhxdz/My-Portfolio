@@ -1600,7 +1600,7 @@ html{
 .no-img-adpt{
     display: block;
 }
-.timeline-card-text-adpt{
+.timeline-card-text-adpt, .small-ua-skh{
     display: none;
 }
 .small-main-text-adpt, .footer-text-contacts-adpt, .start-project-adpt, .img-xs-adpt, .location-adpt, .xs-img-adpt, .download-button-adpt, .theme-button-adpt, .menu-line, .block-description-adpt, .xs-main-text-adpt{
@@ -2827,6 +2827,13 @@ html{
     .footer-small-title{
         font-size: 17px;
     }
+
+    .small-ua-skh{
+        display: block;
+    }
+    .skh-full{
+        display: none;
+    }
    
 
 }
@@ -2835,13 +2842,13 @@ html{
     overflow: hidden;
 }
 
-/* .big-gap{
-    gap: 17px;
+.big-gap{
+    gap: 13px;
 }
 
 .small-gap{
     gap: 10px;
-}
+}/* 
 
 .vbig-gap{
     gap: 20px;
