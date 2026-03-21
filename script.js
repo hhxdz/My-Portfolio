@@ -177,7 +177,11 @@ projectsContainer.addEventListener('click', (event) => {
 async function getRepos(){
     const URL = `https://api.github.com/users/hhxdz/repos?per_page=100&sort=created&direction=desc`;
     try{
-        const response = await fetch(URL)
+        const response = await fetch(URL, {
+            headers:{
+                Authorization: `Bearier ${token}`
+            }
+        })
         if(!response.ok){
             throw new Error('Error', response.status)
         }
@@ -250,7 +254,11 @@ getRepos();
 async function fetchReadme(owner, repo){
     const URL = `https://api.github.com/repos/${owner}/${repo}/readme`;
     try{
-        const response = await fetch(URL)
+        const response = await fetch(URL, {
+            headers:{
+                Authorization: `Bearier ${token}`
+            }
+        })
         if(!response.ok) return null;
 
         const data = await response.json();
