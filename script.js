@@ -356,12 +356,14 @@ const cards = document.querySelectorAll('.timeline-card');
 const modals = document.querySelectorAll('.modal-roadmap-card-container');
 const modalBackground = document.querySelector('.modal-background');
 const closeModalBtns = document.querySelectorAll('.close-modal');
+const body = document.querySelector('.body');
 
 
 function closeAllModals(){
     modals.forEach(modal => {
         modal.classList.remove('active-modal');
         modalBackground.classList.remove('active-modal');
+        body.classList.remove('no-scroll');
     });
 }
 
@@ -376,6 +378,7 @@ cards.forEach(card => {
             closeAllModals();
             modalMatch.classList.add('active-modal');
             modalBackground.classList.add('active-modal');
+            body.classList.add('no-scroll');
         }
     });
 });
@@ -521,12 +524,14 @@ function renderProjectModal(repo, backgroundImage) {
     setTimeout(() => {
         modal.classList.add('active-modal');
         modalBackground.classList.add('active-modal');
+        body.classList.add('no-scroll');
     }, 10);
 
     const closeModal = (e) => {
         if (e) e.stopPropagation();
         modal.classList.remove('active-modal');
         modalBackground.classList.remove('active-modal');
+        body.classList.remove('no-scroll');
 
         setTimeout(() => {
             modal.remove();
@@ -544,6 +549,10 @@ function renderProjectModal(repo, backgroundImage) {
     
     modalBackground.addEventListener('click', closeModal);
     document.addEventListener('keydown', handleEsc);
+
+    if(modalBackground.classList.contains('active-modal')){
+
+    }
 };
 
 function setupModalFavourite(modalElement, repoId) {
