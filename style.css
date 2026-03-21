@@ -2360,9 +2360,9 @@ html{
     .footer-icon-links{
         gap: 10px;
     }
-    .footer-links{
+    /* .footer-links{
         gap: 10px;
-    }
+    } */
     .small-footer-text-adpt{
         display: block;
         width: 150px;
@@ -2592,7 +2592,7 @@ html{
     }
     .footer-links{
         flex-direction: row;
-        gap: 20px;
+        /* gap: 20px; */
     }
     .start-project-adpt{
         display: flex;
@@ -2833,4 +2833,16 @@ html{
 
 .no-scroll{
     overflow: hidden;
+}
+
+.big-gap{
+    gap: 17px;
+}
+
+.small-gap{
+    gap: 10px;
+}
+
+.vbig-gap{
+    gap: 20px;
 }
