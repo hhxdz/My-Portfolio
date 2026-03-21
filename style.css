@@ -2842,14 +2842,31 @@ html{
     overflow: hidden;
 }
 
-.big-gap{
-    gap: 13px;
+
+    @media (max-width: 359px) {
+        .body.ua-lang{
+            .links-top, .links-bottom, .footer-links{
+                gap: 13px;
+            }
+        }
+    }
+    
+
+
+    @media (min-width: 360px) and (max-width: 459px) {
+        .body.ua-lang{
+            .links-top, .links-bottom, .footer-links{
+                gap: 10px;
+            }
+        }
+    }
+
+/* Автоматичне скидання для EN або великих екранів */
+@media (min-width: 460px) {
+    .links-top, .links-bottom, .footer-links{
+        gap: 10px; 
+    }
+    .footer-container {
+        gap: 20px;
+    }
 }
-
-.small-gap{
-    gap: 10px;
-}/* 
-
-.vbig-gap{
-    gap: 20px;
-} */

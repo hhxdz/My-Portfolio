@@ -189,6 +189,9 @@ const translation = {
 }
 
 const cvLinks = document.querySelectorAll('.cv-link');
+const body = document.querySelector('.body');
+console.log(body);
+
 let currentLang = 'en';
 
 function changeLanguage(language){
@@ -206,14 +209,17 @@ function changeLanguage(language){
         }
     })
     if(currentLang === 'en'){
+        body.classList.remove('ua-lang');
         cvLinks.forEach(link =>{
             link.setAttribute('href', "./CV-EN.pdf")
         })
     }else{
+        body.classList.add('ua-lang');
         cvLinks.forEach(link =>{
             link.setAttribute('href', "./CV-UA.pdf")
         })
     }
+    console.log(body);
 };
 
 
@@ -251,7 +257,7 @@ langBtns.forEach(langBtn =>{
         //         btn.style.width = '140px';
         //     })
         // }
-        updateElements();
+        // updateElements();
         updateCards();
     })
    
@@ -274,6 +280,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // downloadBtns.forEach(btn => {
         //     btn.style.width = '160px';
         // })
+        body.classList.add('ua-lang');
         cvLinks.forEach(link =>{
             link.setAttribute('href', "./CV-UA.pdf")
         })
@@ -281,49 +288,50 @@ document.addEventListener('DOMContentLoaded', () => {
         // downloadBtns.forEach(btn => {
         //     btn.style.width = '140px';
         // })
+        body.classList.remove('ua-lang');
         cvLinks.forEach(link =>{
             link.setAttribute('href', "./CV-EN.pdf")
         })
         
     }
-    updateElements();
+    // updateElements();
     updateCards();
-    
+    console.log(body);
 
 });
 
-function updateElements(){
-    if(window.innerWidth < 360 && currentLang === 'ua'){
-        // linksTop.style.gap = "13px";
-        // linksBot.style.gap = "13px";
-        // footerLinks.style.gap = "13px";
-        linksTop.classList.add('big-gap');
-        linksBot.classList.add('big-gap');
-        footerLinks.classList.add('big-gap');
-        footerContainer.classList.remove('small-gap')
-    }else if(window.innerWidth >= 360 && window.innerWidth < 460 && currentLang === 'ua'){
-        // linksTop.style.gap = "";
-        // linksBot.style.gap = "";
-        // footerLinks.style.gap = "10px";
-        linksTop.classList.remove('big-gap');
-        linksBot.classList.remove('big-gap');
-        footerLinks.classList.remove('big-gap');
-        // footerContainer.style.gap = "10px"
-        footerContainer.classList.add('small-gap')
-    }
-    else if(window.innerWidth >= 460 || currentLang === 'en'){
-        // linksTop.style.gap = "";
-        // linksBot.style.gap = "";
-        // footerLinks.style.gap = "";
-        // footerContainer.style.gap = "";
-        linksTop.classList.remove('big-gap');
-        linksBot.classList.remove('big-gap');
-        footerLinks.classList.remove('big-gap');
-        footerContainer.classList.remove('small-gap')
-    }
+// function updateElements(){
+    // if(window.innerWidth < 360 && currentLang === 'ua'){
+    //     // linksTop.style.gap = "13px";
+    //     // linksBot.style.gap = "13px";
+    //     // footerLinks.style.gap = "13px";
+    //     linksTop.classList.add('big-gap');
+    //     linksBot.classList.add('big-gap');
+    //     footerLinks.classList.add('big-gap');
+    //     footerContainer.classList.remove('small-gap')
+    // }else if(window.innerWidth >= 360 && window.innerWidth < 460 && currentLang === 'ua'){
+    //     // linksTop.style.gap = "";
+    //     // linksBot.style.gap = "";
+    //     // footerLinks.style.gap = "10px";
+    //     linksTop.classList.remove('big-gap');
+    //     linksBot.classList.remove('big-gap');
+    //     footerLinks.classList.remove('big-gap');
+    //     // footerContainer.style.gap = "10px"
+    //     footerContainer.classList.add('small-gap')
+    // }
+    // else if(window.innerWidth >= 460 || currentLang === 'en'){
+    //     // linksTop.style.gap = "";
+    //     // linksBot.style.gap = "";
+    //     // footerLinks.style.gap = "";
+    //     // footerContainer.style.gap = "";
+    //     linksTop.classList.remove('big-gap');
+    //     linksBot.classList.remove('big-gap');
+    //     footerLinks.classList.remove('big-gap');
+    //     footerContainer.classList.remove('small-gap')
+    // }
     
     
-}
+// }
 function updateCards(){
         if(window.innerWidth < 550 && currentLang === 'ua'){
             date.style.flexDirection = "column";
@@ -338,7 +346,7 @@ function updateCards(){
         }
     }
 
-window.addEventListener('resize', updateElements);
+// window.addEventListener('resize', updateElements);
 window.addEventListener('resize', updateCards)
     
 
