@@ -179,7 +179,7 @@ async function getRepos(){
     try{
         const response = await fetch(URL, {
             headers:{
-                Authorization: `Bearier ${token}`
+                Authorization: `Bearer ${token}`
             }
         })
         if(!response.ok){
@@ -256,7 +256,7 @@ async function fetchReadme(owner, repo){
     try{
         const response = await fetch(URL, {
             headers:{
-                Authorization: `Bearier ${token}`
+                Authorization: `Bearer ${token}`
             }
         })
         if(!response.ok) return null;
