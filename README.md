@@ -2,7 +2,7 @@
 
 A modern and responsive personal portfolio website created to showcase my skills, projects, and experience as a Frontend Developer.
 
-<img src="portfolio-main-page.png" alt="Main Page">
+![screen of main page](portfolio-main-page.png)
 
 ## Live Demo
 
