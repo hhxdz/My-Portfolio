@@ -25,12 +25,10 @@ html{
 
 
 /* ADDITIONAL CLASSES */
-/* .active-modal{
-    display: block;
-} */
-/* .closed-modal{
-    display: none;
-} */
+
+.no-scroll{
+    overflow: hidden;
+}
 .header-scroll{
     background: #040e2ab0;
     box-shadow: 0 6px 20px rgba(5, 2, 23, 0.453);
@@ -126,12 +124,8 @@ html{
 }
 .logo:hover{
     transform: scale(1.07);
-    /* background: linear-gradient(90deg,rgb(91, 206, 255) 0%, rgb(0, 145, 255) 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent; */
 }
 .theme-button{
-    /* background: linear-gradient(90deg,#948FEF 0%, rgba(212, 144, 232, 1) 79%); */
     width: 45px;
     height: 45px;
     display: flex;
@@ -141,12 +135,9 @@ html{
     cursor: pointer;
     font-size: 18px;
     font-weight: 600;
-    /* box-shadow: 0 3px 20px rgba(5, 2, 23, 0.379); */
 }
 .theme-button:hover{
     transform: scale(1.08);
-    /* box-shadow: 0 0 20px #75b8ff69; */
-    /* background: linear-gradient(90deg,#b0abff 0%, rgb(255, 159, 247) 79%); */
 }
 .theme-button:active{
     transform: scale(0.9);
@@ -222,10 +213,6 @@ html{
     color: #84899f;
     font-size: 16px;
 }
-/* .main-buttons{
-    display: flex;
-    gap: 20px;
-} */
 .main-button-links{
     display: flex;
     gap: 20px;
@@ -378,7 +365,6 @@ html{
 
 /* ABOUT ME */
 
-
 .about-me{
     margin-top: 80px;
 }
@@ -398,7 +384,6 @@ html{
 }
 .card{
     background: linear-gradient(320deg,#07112fb3 60%, rgba(21, 28, 82, 0.329) 100%);
-    /* background-color: #07112fb3; */
     width: 220px;
     padding: 20px;
     border-radius: 15px;
@@ -449,7 +434,6 @@ html{
     padding-left: 30px;
 }
 
-
    /* BACKGROUND ANIMATION */
 
 .particles {
@@ -475,7 +459,6 @@ html{
     width: 13px;
     height: 13px;    
     background: rgba(144, 188, 255, 0.349);
-    /* box-shadow: 0 0 8px rgba(144, 188, 255, 0.6); */
 }
 .very-small-particle{
     width: 3px;
@@ -555,8 +538,6 @@ html{
     background: linear-gradient(180deg, #6985f372 0%, #8588F0 10%, #007BFF 40%, #00000000 100%);
 }
 
-/* background: linear-gradient(180deg,  #0b539f 20%, #D490E8 50%, #007BFF 85%, #1fbcff00 100%); */
-
 .point {
     width: 40px;
     height: 40px;
@@ -578,7 +559,6 @@ html{
     cursor: pointer;
 }
 .timeline-card:hover{
-    /* border: 1px solid #1FBCFF; */
     scale: 1.02;
     border: 1px solid #1FBCFF;
     box-shadow: 0 0 20px #75b8ff69;
@@ -693,10 +673,6 @@ html{
     font-size: 18px;
     font-weight: 500;
     color: #84899f7d;
-    /* background: linear-gradient(90deg, #84899f53 20%, #040e2a00 90%);
-    padding: 20px;
-    border-radius: 15px;
-    width: 300px; */
     text-align: center;
 }
 
@@ -715,7 +691,6 @@ html{
     border-radius: 15px ;
     width: 480px;
     border: 1px solid #091738;
-    /* height: 400px; */
     cursor: pointer;
 }
 .project-card:hover{
@@ -739,7 +714,6 @@ html{
     background-color: #2d4487;
 }
 .project-card-top{
-    /* background-image: url(./main-page.png); */
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: top;
@@ -749,14 +723,11 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-
-    /* -webkit-box-shadow: inset 0px -60px 70px -30px #07112fd6;  */
     box-shadow: inset 0px -60px 80px -30px #07112fd6;
 }
 .project-card-title{
     font-size: 18px;
     font-family: 500;
-    /* margin-bottom: 10px; */
 }
 .project-card-bottom{
     padding: 20px;
@@ -788,9 +759,7 @@ html{
     gap: 8px;
     font-size: 14px;
 }
-/* .demo-link:hover{
-    background-color: #184d8f;  
-} */
+
 .project-card-description{
     margin: 15px 0 10px;
 }
@@ -911,12 +880,7 @@ html{
     line-height: 22px;
     margin: 15px 0;
 }
-/* .footer-text-block{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 20px;
-} */
+
 .footer-contacts{
     gap: 5px;
     margin-bottom: 15px;
@@ -964,8 +928,6 @@ html{
     font-size: 16px;
     color: #84899F;
 }
-
-
 
     /* SKILLS */
 
@@ -1041,12 +1003,10 @@ html{
     color: #ED91E5;
 }
 
-
     /* ANIMATIONS */
 .animate{
     opacity: 0;
 }
-
 
 .show-right{
     animation: show-right 1.5s;
@@ -1064,9 +1024,6 @@ html{
 
 .main-animation {
     position: absolute;
-    /* width: 300px;
-    height: 300px; */
-    /* animation: show-left 2s, float 4s ease-in-out infinite; */
     left: 63%;
     z-index: -1;
 }
@@ -1161,10 +1118,6 @@ html{
     0% {transform: translateY(+8px);}
     50% {transform: translateY(-20px);}
     100% {transform: translateY(+8px);}
-
-    /* 0% {transform: translateY(0);}
-    50% {transform: translateY(-28px);}
-    100% {transform: translateY(0);} */
 }
 
 @keyframes show-right{
@@ -1210,7 +1163,6 @@ html{
     }
 }
 
-
     /* MODAL WINDOWS */
 
 .modal-background{
@@ -1243,19 +1195,14 @@ html{
     transform: translate(-50%, -50%) scale(1);
 }
 
-
 .modal-roadmap-card-container{
     border-radius: 15px;
     z-index: 101;
-
-
-
     position: fixed;
     z-index: 101; 
     left: 50%;
     top: 50%;
     transform: translate(-50%, -45%) scale(0.95);
-    
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -1302,9 +1249,6 @@ html{
     .month{
         font-size: 18px;
     }
-    /* .company{
-        font-size: 20px;
-    } */
     .timeline-card-text{
         font-size: 18px;
         line-height: 25px;
@@ -1330,7 +1274,6 @@ html{
     .achievement:nth-child(1){
         margin: 0;
     }
-
     .key-achievements, .technologies-used{
         font-size: 22px;
         font-weight: 500;
@@ -1381,7 +1324,6 @@ html{
     }
 }
 
-
     /* PROJECT MODAL STYLES */
 
 .top-modal-container{
@@ -1397,14 +1339,12 @@ html{
     height: 160px;
     border-radius: 0px;
     margin-bottom: 15px;
-
 }
 .modal-content{
     display: flex;
     justify-content: space-between;
     gap: 30px;
     margin-top: 15px;
-    /* flex-direction: column; */
 }
 .modal-title{
     background: linear-gradient(90deg,rgb(45, 192, 255) 0%, #007BFF 100%);
@@ -1436,10 +1376,6 @@ html{
     margin: 0;
     max-width: 360px;
 }
-/* .modal-tags{
-    max-width: 360px;
-} */
-
 .modal-containers{
     display: flex;
     gap: 5px;
@@ -1457,13 +1393,9 @@ html{
     padding: 7px 14px;
     font-size: 17px;
 }
-
 .modal-roadmap-card-container.margin-adpt .achievements{
     margin: 10px 0;
 }
-
-
-
 
     /* BURGER MENU */
 
@@ -1480,18 +1412,14 @@ html{
     width: 100%;
     z-index: 3;
     padding: 20px 0;
-
     display: flex;
     justify-content: center;
     align-items: center;
     border-top: 1px solid transparent;
 }
 
-.menu-link-container{
-   
+.menu-link-container{ 
     width: 800px;
-    
-    /* margin: auto; */
 }
 .menu-links{
     display: flex;
@@ -1501,20 +1429,17 @@ html{
 .menu-link{
     font-weight: 300;
 }
-
 .active-menu{
     pointer-events: auto;
     opacity: 1;
     visibility: visible;
     transform: translateY(0px);
-
     background: #051537d2;
     backdrop-filter: blur(15px);
 }
 .scroll-menu{
     box-shadow: 0 6px 20px rgba(5, 2, 23, 0.453);
     border-top: 2px solid #2c4781;
-    /* top: 80px; */
 }
 .burger-menu{
     display: none;
@@ -1527,23 +1452,16 @@ html{
 .burger-menu:hover{
     transform: scale(1.06);
     background-color: rgb(56, 84, 155);
-    /* box-shadow: 0 0 15px #75b8ff32; */
 }
-
 
     /* ADAPTIVE */
 
-
-
- .certificate{
-        display: none;
-    }
-
+.certificate{
+    display: none;
+}
 .point-apdt{
     display: none;
 }
-
-
 .no-footer-text-adpt{
     display: block;
 }
@@ -1581,7 +1499,6 @@ html{
 .icon-link-adpt{
     display: none;
 }
-
 .no-project-card-links-adpt{
     display: flex;
 }
@@ -1621,12 +1538,6 @@ html{
     .no-main-text-adpt{
         width: 84%;
     }
-    /* .container{
-        width: 900px;
-    }
-    .header-container{
-        width: 900px;
-    } */
     .card{
         width: 215px;
     }
@@ -1718,19 +1629,6 @@ html{
     .skill{
         grid-template-columns: 90px 1fr 30px;
     }
-
-    /* .card{
-        width: 192px;
-        height: auto;
-         padding: 15px;
-        
-    }
-    .card-container{
-        gap: 18px;
-        width: 450px;
-        height: 300px;
-        
-    } */
     .about-block{
         justify-content: center;
     }
@@ -1744,8 +1642,6 @@ html{
         
     }
     .card-container{
-        /* width: 100%; */
-        /* height: auto; */
         gap: 18px;
         width: auto;
         flex-wrap: nowrap;
@@ -1788,9 +1684,6 @@ html{
         flex-direction: column;
         justify-content: space-between;
     }
-
-
-
     .center-circle{
         width: 110px;
         height: 110px;
@@ -1803,7 +1696,6 @@ html{
         top: 90px;
         left:90px;
     }
-
     .orbit, .main-animation{
         width: 240px;
         height: 240px;
@@ -1812,17 +1704,14 @@ html{
         width: 200px;
         height: 200px;
     }
-
     .orbit-three{
         width: 170px;
         height: 170px;
     }
-
     .dot{
         width: 20px;
         height: 20px;;
     }
-
 }
 
 @media screen and (max-width: 910px) {
@@ -1832,12 +1721,9 @@ html{
         padding: 10px 15px;
         display: flex;
         gap: 10px;
-        align-items: center;
-        
+        align-items: center;  
     }
     .card-container{
-        /* width: 100%; */
-        /* height: auto; */
         gap: 18px;
         width: auto;
         flex-wrap: nowrap;
@@ -1845,8 +1731,7 @@ html{
         
     }
     .info-text-adpt{
-        display: block;
-        
+        display: block;     
     }
     .info-text{
         font-size: 16px;
@@ -1883,10 +1768,6 @@ html{
     .footer-link{
         font-size: 15px;
     }
-    /* .footer-text{
-        width: 370px;
-    } */
-    
     .timeline-item{
         display: flex;
         width: auto;
@@ -1917,21 +1798,12 @@ html{
     .container, .header-container, .footer-container, .menu-link-container{
         width: 700px;
     }
-    /* .skills-container{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        
-    } */
     .skill-card{
         width: 340px;
-        /* margin: auto; */
     }
-
     .orbit, .main-animation{
         width: 210px;
-        height: 210px;
-        
+        height: 210px; 
     }
     .main-animation{
         left: 66%;
@@ -1967,9 +1839,6 @@ html{
     .info-title{
         font-size: 20px;
     }
-    /* .top-inputs{
-        flex-direction: column;
-    } */
     .input{
         width: 160px;
         height: 50px;
@@ -1986,7 +1855,6 @@ html{
     .project-card-top{
         height: 140px;
     }
-    
 }
 
 
@@ -2036,9 +1904,6 @@ html{
     .card{
         width: 235px;
     }
-    /* .about-block{
-        gap: 10px;
-    } */
     .card-text{
         font-size: 17px;
     }
@@ -2046,10 +1911,6 @@ html{
         font-size: 14px;
         margin-top: 0;
     }
-    /* .no-pic-adpt{
-        display: none;
-    } */
-    
     .about-text-adpt{
         display: block;
         width: 100%;
@@ -2087,8 +1948,7 @@ html{
         font-size: 16px;
     }
     .modal-roadmap-card{
-        padding: 25px;
-        
+        padding: 25px;   
     }
     .modal-roadmap-card-container{
         width: 500px;
@@ -2103,8 +1963,6 @@ html{
     .modal-roadmap-card-container .key-achievements, .modal-roadmap-card-container .technologies-used{
         font-size: 18px;
     }
-    
-    
     .main-button{
         width: 205px;
         height: 50px;
@@ -2161,7 +2019,6 @@ html{
         height: 60px;
         width: 60px;
     }
-    
     .contact-button{
         display: none;
     }
@@ -2220,12 +2077,6 @@ html{
     .long, .textarea{
         width: 100%;
     }
-    /* .info-text-adpt{
-        display: none;
-    }
-    .no-info-text-adpt{
-        display: block;
-    } */
     .info-container{
         width: 280px;
     }
@@ -2255,7 +2106,6 @@ html{
     .roadmap .achievement{
         display: none;
     }
-
     .modal-roadmap-card-container{
         width: 430px;
         .month{
@@ -2263,7 +2113,6 @@ html{
             font-weight: 400;
         }
     }
-
     .modal-roadmap-card-container#dynamic-project-modal{
         width: 400px;
     }
@@ -2315,23 +2164,12 @@ html{
     }
     .footer-second-block{
         width: 100px;
-        /* display: flex;
-        flex-direction: column;
-        align-items: center; */
     }
-    /* .links-top, .links-bottom, .footer-links{
-        align-items: center;
-    }
-    .links-bottom:nth-child(2){
-        width: 38px;
-    } */
     .link-title{
         width: auto;
     }
     .footer-text{
         width: 180px;
-        /* font-size: 18px;
-        font-weight: 500; */
         margin-bottom: 10px;
         margin-top: 3px;
     }
@@ -2360,9 +2198,6 @@ html{
     .footer-icon-links{
         gap: 10px;
     }
-    /* .footer-links{
-        gap: 10px;
-    } */
     .small-footer-text-adpt{
         display: block;
         width: 150px;
@@ -2421,8 +2256,6 @@ html{
     .container, .header-container, .footer-container, .menu-link-container, .timeline, .about-text, .info-container, .info{
         width: 380px;
     }
-    
-
     .modal-roadmap-card-container{
         max-width: 360px;
     }
@@ -2592,13 +2425,10 @@ html{
     }
     .footer-links{
         flex-direction: row;
-        /* gap: 20px; */
     }
     .start-project-adpt{
         display: flex;
-        /* margin-top: 10px; */
     }
-    
     .no-location-adpt{
         display: none;
     }
@@ -2838,30 +2668,22 @@ html{
 
 }
 
-.no-scroll{
-    overflow: hidden;
+@media (max-width: 359px) {
+    .body.ua-lang{
+        .links-top, .links-bottom, .footer-links{
+            gap: 13px;
+        }
+    }
 }
 
-
-    @media (max-width: 359px) {
-        .body.ua-lang{
-            .links-top, .links-bottom, .footer-links{
-                gap: 13px;
-            }
+@media (min-width: 360px) and (max-width: 459px) {
+    .body.ua-lang{
+        .links-top, .links-bottom, .footer-links{
+            gap: 10px;
         }
     }
-    
+}
 
-
-    @media (min-width: 360px) and (max-width: 459px) {
-        .body.ua-lang{
-            .links-top, .links-bottom, .footer-links{
-                gap: 10px;
-            }
-        }
-    }
-
-/* Автоматичне скидання для EN або великих екранів */
 @media (min-width: 460px) {
     .links-top, .links-bottom, .footer-links{
         gap: 10px; 
