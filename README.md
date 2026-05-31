@@ -67,8 +67,7 @@ cd My-Portfolio
 
 ## Contact
 
-GitHub: https://github.com/hhxdz
-
+GitHub: https://github.com/hhxdz <br>
 Email: pronivanka16@gmail.com
 
 Feel free to reach out for collaboration or feedback.
